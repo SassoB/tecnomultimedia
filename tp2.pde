@@ -2,7 +2,7 @@
  legajo: 91523/5
  puede reiniciar con cualquier boton del teclado
  
- https://www.youtube.com/watch?v=UbuD2LVQYN0*/
+ https://www.youtube.com/watch?v=UbuD2LVQYN0 */
  
 void setup() {
   size(800, 600);
