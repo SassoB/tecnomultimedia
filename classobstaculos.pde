@@ -4,16 +4,16 @@ class Cubo {
   float ypos;
   float xspeed;
 
-  Cubo(color tempC, float tempXpos, float tempYpos, float tempXspeed) {
-    c = tempC;
-    xpos = tempXpos;
-    ypos = tempYpos;
-    xspeed = tempXspeed;
+  Cubo(color C, float Xpos, float Ypos, float Xspeed) {
+    c = C;
+    xpos = Xpos;
+    ypos = Ypos;
+    xspeed = Xspeed;
     xpos=width+100;
   }
 
 
-  void dibujarCar() {
+  void dibujarCubo() {
     fill(c);
     rect(xpos, ypos, 90, 50, 5 );
 

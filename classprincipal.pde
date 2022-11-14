@@ -1,6 +1,5 @@
 class Principal {
   Cubo[]cub= new Cubo[5];
-  ArrayList <Cubo> Car;
 
   Pajaro a;
   //Inicio i;
@@ -15,9 +14,9 @@ class Principal {
 
   void display() {
     for (int i= 0; i < cub.length; i++) {
-      cub[i].dibujarCar();
+      cub[i].dibujarCubo();
     }
     a.dibujarPajaro();
-    //i.dibujarInicio();
+    //  i.dibujarInicio();
   }
 }

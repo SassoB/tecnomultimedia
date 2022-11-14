@@ -9,7 +9,7 @@ class Inicio {
   }
 
   void dibujarInicio() {
-    rect(px,py,ancho,alto);
+    rect(px, py, ancho, alto);
     //image(cielo, width/2, height/2, width, height);
     for (int i=1; i<4; i++) {
       fill(255);
@@ -20,8 +20,5 @@ class Inicio {
       text("instrucciones", 120, 240);
       text("creditos", 150, 340);
     }
-    if(mousePressed){
-    
-      }
   }
 }

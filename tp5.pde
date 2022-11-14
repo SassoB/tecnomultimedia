@@ -4,7 +4,7 @@ Principal p;
 void setup() {
   size(800, 600);
   sonidomusica = new SoundFile(this, "musica.mp3");
-  sonidoclick = new SoundFile(this, "click.mp3");
+  //sonidoclick = new SoundFile(this, "click.mp3");
   p= new Principal();
   sonidomusica.loop();
 }
@@ -15,5 +15,5 @@ void draw() {
 }
 
 void mouseClicked() {
-  sonidoclick.play();
+  //sonidoclick.play();
 }
