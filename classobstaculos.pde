@@ -1,15 +1,25 @@
-class Obstaculo {
-  float ox, oy, ps;
-  int ancho, alto;
+class Cubo {
+  color c;
+  float xpos;
+  float ypos;
+  float xspeed;
 
-  Obstaculo(float ox, float oy, int ancho, int alto ) {
-    this.ox = ox;
-    this.oy = oy;
-    this.ancho = ancho;
-    this.alto = alto;
+  Cubo(color tempC, float tempXpos, float tempYpos, float tempXspeed) {
+    c = tempC;
+    xpos = tempXpos;
+    ypos = tempYpos;
+    xspeed = tempXspeed;
+    xpos=width+100;
   }
-  void dibujarObstaculo() {
-    fill(255, 255, 0);
-    rect(ox, oy, ancho, alto);
+
+
+  void dibujarCar() {
+    fill(c);
+    rect(xpos, ypos, 90, 50, 5 );
+
+    xpos -= xspeed;
+    if (xpos+100 < 0) {
+      xpos = width+100;
+    }
   }
 }
