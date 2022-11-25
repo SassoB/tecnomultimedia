@@ -1,5 +1,5 @@
 class Pajaro {
-
+  PImage cielo = loadImage("cieloPP.png");
   PImage [] paj= new PImage[4];
   float px, py, ps;
   int tam, orden, tiempo;
@@ -14,9 +14,10 @@ class Pajaro {
 
   void dibujarPajaro() {
     imageMode(CENTER);
+    image(cielo, width/2, height/2, width, height);
     fill(0);
     textSize(20);
-    text("tiempo: "+ tiempo, 10, 20);
+    text("tiempo: "+ tiempo, width-100, height-20);
     for (int i=0; i<4; i++) {
       paj[i] = loadImage("bird"+i+".png");
     }
@@ -26,13 +27,12 @@ class Pajaro {
     }
     image(paj[orden], px, py, tam, tam);
     fill(255, 0, 0);
-    //circle(px, py, tam);
     if (mousePressed) {
       py=py-12;
     } else {
       py=py+4;
     }
-    if (frameCount%60==0) {
+    if (frameCount%30==0) {
       tiempo++;
     }
   }
