@@ -14,7 +14,6 @@ class Pajaro {
 
   void dibujarPajaro() {
     imageMode(CENTER);
-    image(cielo, width/2, height/2, width, height);
     fill(0);
     textSize(20);
     text("tiempo: "+ tiempo, width-100, height-20);
