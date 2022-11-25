@@ -31,7 +31,7 @@ class Pajaro {
     } else {
       py=py+4;
     }
-    if (frameCount%30==0) {
+    if (frameCount%60==0) {
       tiempo++;
     }
   }
